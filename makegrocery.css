@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
+
+.bgcontainer {
+  background: #F5F5DC;
+  width: 400px;
+  margin: auto;
+}
+
+.bgcontainer h1 {
+  text-align: center;
+  font-family: "Bonheur Royale";
+  color: #D2691E;
+  font-size: 60px;
+}
+
+.formcontainer {
+  float: left;
+  background: white;
+  padding: 10px;
+  width: 400px;
+}
+
+.formcontainer h2 {
+  text-align: center;
+  color: #D2691E;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.displaylist {
+  margin: auto;
+  background: white;
+  padding: 5px;
+  height: 200px;
+  width: 270px;
+  font-weight: bold;
+}
+
+.displaylist h3 {
+  text-align: center;
+  color: #D2691E;
+}
+
+.maptime {
+  float: right;
+  padding: 10px;
+  height: 100px;
+  width: 400px;
+  text-align: center;
+  background-color: #F5F5DC;
+  border-radius: 10px;
+  position: absolute;
+  top: 190px;
+  right:10px;
+
+}
+
+.maptime h4 {
+  text-align: center;
+  color: #D2691E;
+}
+
+.maptime button {
+  display: inline-block;
+  background-color: #228b22;
+  border-radius: 15px;
+  width: 55px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: grey;
+}
+
+footer {
+  border-radius: 10px;
+  border-color: #D2691E;
+  border-style: groove;
+  width: 350px;
+  height: 80px;
+  background: rgb(222, 241, 222);
+  position: absolute;
+  right: 10px;
+  bottom: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #D2691E;
+  font-family: "Bonheur Royale";
+  font-size: 37px;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+}
