@@ -90,10 +90,10 @@ footer {
   color: #D2691E;
   font-family: "Bonheur Royale";
   font-size: 37px;
-  span {
+  /*span {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 15px;
-  }
+  } */
 }

@@ -7,8 +7,7 @@
 html {
   font-family: "Bonheur Royale";
   font-size: 35px;
-  border-color: blue;
-  background-color: rgba(116, 36, 5, 0.459);
+  background-color: rgba(23, 82, 23, 0.658);
 }
 .favorites-icon {
   justify-content: right;
@@ -16,11 +15,14 @@ html {
 }
 .main {
   width: fit-content;
-  margin: 100px 200px 100px 200px;
-  background-color: rgba(151, 223, 170, 0.637);
+  margin: 100px 100px 100px 100px;
   padding: 10%;
   display: inline-flex;
   justify-content: center;
+  background-image: url(img/bowl.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
 
 }
 section {
@@ -34,6 +36,7 @@ section {
   font-size: 4rem;
   color: rgb(13, 58, 25);
   margin-bottom: 30px;
+  padding: 4%;
 }
 form {
   width: 100%;
@@ -77,7 +80,11 @@ form input {
   text-align: center;
   justify-content: center;
   padding-top: 70%;
-}
+  color:rgb(30, 88, 22);
+  }
+ .welcome{
+     padding-bottom: 4%;
+ }
 .entry {
   text-align: left;
   padding-right: 20rem;
