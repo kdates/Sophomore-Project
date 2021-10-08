@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
 
+.dumbbgd {
+  background-color: rgb(222, 241, 222);
+  height: 550px;
+}
 .bgcontainer {
-  background: #F5F5DC;
+  background: #f5f5dc;
   width: 400px;
   margin: auto;
 }
@@ -9,20 +13,80 @@
 .bgcontainer h1 {
   text-align: center;
   font-family: "Bonheur Royale";
-  color: #D2691E;
+  color: #d2691e;
   font-size: 60px;
 }
-
+html {
+  background-color: rgba(23, 82, 23, 0.658);
+  font-family: "Bonheur Royale";
+}
+.mainP {
+  width: max-content;
+  margin-left: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 60rem;
+  padding: 10%;
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(222, 241, 222);
+}
+.search-recipe {
+  justify-content: right;
+}
+form {
+  padding-bottom: 10%;
+  padding-left: 20%;
+  display: flex;
+}
+form input {
+  width: 80%;
+  background-color: transparent;
+  padding: 5px;
+  display: inline-block;
+}
+form ion-icon {
+  font-size: 1.3rem;
+}
+.search-result {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-gap: 100px;
+  grid-template: auto/repeat(auto-fit, minmax(300px, 1fr));
+}
+.flex-win {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.food {
+  background-color: burlywood;
+  overflow: hidden;
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  outline: #228b22;
+  border-color: aqua;
+}
+img {
+  width: 100%;
+  height: 70%;
+  border-radius: 4px;
+}
 .formcontainer {
   float: left;
   background: white;
   padding: 10px;
   width: 400px;
+  height: 420px;
 }
 
 .formcontainer h2 {
   text-align: center;
-  color: #D2691E;
+  color: #d2691e;
 }
 
 ul {
@@ -40,7 +104,7 @@ ul {
 
 .displaylist h3 {
   text-align: center;
-  color: #D2691E;
+  color: #d2691e;
 }
 
 .maptime {
@@ -49,17 +113,16 @@ ul {
   height: 100px;
   width: 400px;
   text-align: center;
-  background-color: #F5F5DC;
+  background-color: #f5f5dc;
   border-radius: 10px;
   position: absolute;
   top: 190px;
-  right:10px;
-
+  right: 10px;
 }
 
 .maptime h4 {
   text-align: center;
-  color: #D2691E;
+  color: #d2691e;
 }
 
 .maptime button {
@@ -75,25 +138,122 @@ button:hover {
 }
 
 footer {
-  border-radius: 10px;
-  border-color: #D2691E;
+  border-radius: 10%;
+  border-color: #86371f8a;
   border-style: groove;
-  width: 350px;
-  height: 80px;
-  background: rgb(222, 241, 222);
+  border-width: 20px;
+  width: 150px;
+  height: 35px;
+  background: rgba(219, 93, 43, 0.308);
   position: absolute;
   right: 10px;
-  bottom: -30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #D2691E;
-  font-family: "Bonheur Royale";
-  font-size: 37px;
-  /*span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-  } */
+  font-weight: bold;
+  color: #0c1609ad;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+
+.goHome { /*Will take user back to welcome page when pressed */
+  width: 100px;
+  height: max-content;
+}
+
+footer ion-icon {
+  justify-content: right;
+  align-items: right;
+  font-size: 40px;
+}
+
+.Premade-title {
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  margin: 0;
+  width: 100%;
+}
+span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: rgba(23, 82, 23, 0.658);
+  font-family: Arial;
+  width: 103px;
+  height: 48px;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 0;
+}
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(13, 58, 25);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 13px;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.navbar {
+  margin: 1.5%;
+}
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(13, 58, 25);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(13, 58, 25);
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgb(222, 241, 222);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }

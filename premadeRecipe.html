@@ -2,96 +2,99 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-<!-- link to makegrocery css -->
-    <link href="makeGrocery.css" rel="stylesheet" />
-<!-- link to styles.css -->
-    <link href="styles.css" rel="stylesheet" />
-
+    <link href="makegrocery.css" rel="stylesheet" />
     <meta charset="utf-8">
-    <title></title>
+    <title>Premade Recipes</title>
   </head>
   <body>
-    <h1>Premade Recipes and Grocery Lists</h1>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar scroll</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul
-            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-            style="--bs-scroll-height: 100px"
-          >
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarScrollingDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Link
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarScrollingDropdown"
-              >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Link</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
+      <section class="mainP">
+      <div>
+            <h1 class="Premade-title">Premade Recipes, Grocery Lists and Utlities</h1>
+            <div class="navbar">
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    Recipe Categories
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">Category 1</a>
+                    <a href="#">Category 2</a>
+                    <a href="#">Category 3</a>
+                  </div>
+                </div>
+              </div>
+          <div class ="search-recipe"><form class="searchbar">
+            <input type="text" placeholder="Search for a Recipe...">
+            <ion-icon name="search"></ion-icon>
           </form>
+<div class="search-result">
+    <div class="food">
+        <img src="img/chicken.jpg" alt="" class="recipe photos"/>
+    <div class="flex-win">
+        <h1 class="recipe-name">This is the recipe</h1>
+        <a href="#">View Recipe</a>
+    </div>
+    <p class ="food-diet-data">Calories: 120</p>
+    </div>
+    <div class="food">
+        <img src="img/chicken.jpg" alt=""class="recipe photos"/>
+        <div class="flex-win">
+            <h1 class="recipe-name">This is the recipe</h1>
+            <a href="#">View Recipe</a>
         </div>
-      </div>
-    </nav>
+        <p class ="food-diet-data">Calories: 120</p>
+        </div>
+        <div class="food">
+            <img src="img/chicken.jpg" alt=""class="recipe photos"/>
+            <div class="flex-win">
+                <h1 class="recipe-name">This is the recipe</h1>
+                <a href="#">View Recipe</a>
+            </div>
+            <p class ="food-diet-data">Calories: 120</p>
+            </div>
+            <div class="food">
+                <img src="img/chicken.jpg" alt=""class="recipe photos"/>
+                <div class="flex-win">
+                    <h1 class="recipe-name">This is the recipe</h1>
+                    <a href="#">View Recipe</a>
+                </div>
+                <p class ="food-diet-data">Calories: 120</p>
+                </div>
+                <div class="food">
+                    <img src="img/chicken.jpg" alt=""class="recipe photos"/>
+                    <div class="flex-win">
+                        <h1 class="recipe-name">This is the recipe</h1>
+                        <a href="#">View Recipe</a>
+                    </div>
+                    <p class ="food-diet-data">Calories: 120</p>
+                    </div>
+                    <div class="food">
+                        <img src="img/chicken.jpg" alt=""class="recipe photos"/>
+                        <div class="flex-win">
+                            <h1 class="recipe-name">This is the recipe</h1>
+                            <a href="#">View Recipe</a>
+                            <p class ="food-diet-data">Calories: 120</p>
+                        </div>
 
-  <head>
+                        </div>
+</div>
+        </div>
 
-    <title></title>
-  </head>
-    <!-- footer -->
-    <a href="home.html"><footer>
-      <div class="return">
-        <span>
-          <i class="goHome">
+    </div>
+  </div>
+
+</section>
+<a href="home.html">
+    <footer>
+      <span class="return">
+        <i class="goHome">
+            Return to Home page
     </i>
-          Return to Home page</span>
-      </div>
+    <ion-icon name="home-outline"></ion-icon>
+</span>
     </footer>
   </a>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

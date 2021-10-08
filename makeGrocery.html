@@ -3,16 +3,16 @@
 <html lang="en" dir="ltr">
   <head>
     <!-- link to js file -->
-      <script src="nav.js"></script>
+    <script src="nav.js"></script>
     <!-- links to css file -->
-      <link href="makeGrocery.css" rel="stylesheet" />
+      <link href="makegrocery.css" rel="stylesheet" />
 
     <meta charset="utf-8">
     <title></title>
   </head>
-<!-- Background color: Light green -->
-<body style="background-color: #90EE90;">
-  <body>
+<!-- Background color: olive green -->
+<!-- <body style="background-color: rgba(237, 241, 198, 0.904);"> -->
+  <body class="dumbbgd">
     <!-- background object in css and js -->
     <div id="bgd" class="bgcontainer">
     <!-- Webpage heading -->
@@ -53,15 +53,19 @@
   </div>
 
   <!-- footer -->
-  <a href="home.html"><footer>
-    <div class="return">
-      <span>
+  <a href="home.html">
+    <footer>
+      <span class="return">
         <i class="goHome">
-  </i>
-        Return to Home page</span>
-    </div>
-  </footer>
-</a>
+            Return to Home page
+    </i>
+    <ion-icon name="home-outline"></ion-icon>
+</span>
+    </footer>
+  </a>
 
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

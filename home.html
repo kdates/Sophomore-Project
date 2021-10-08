@@ -45,24 +45,31 @@
             </div>
         </li>
       </ul></div>
+  <!-- favorites button -->
  <span class="container">
         <span class="favorites-icon">
             <span class="word-fav">My Favorites</span>
-          <button onclick="favoritesTab()" id ="favs"class="fav-button">
+          <button onclick="favoritesTab()" id ="favs" class="fav-button">
               <ion-icon name="star-outline" size="large"></ion-icon>
           </button>
         </span>
+        <!-- name input -->
         <span class ="name entry">
             <h1 class ="name name-question">
                 New Here?
-                <form class="enter-name">
-                    <input type="text" placeholder="Type name here...">
+                <form onsubmit = "return welcomeUser();" class="enter-name">
+                    <input type="text" id="username" placeholder="Type name here...">
                 </form>
             </h1>
         </span>
 
 
+
 <span class ="welcome-area">
+  <!--Display user's name list -->
+  <div class="displayname">
+    <p><span id= "theirName"></span></p>
+  </div>
 <h1 class="welcome">
 Welcome to...
 </h1>
@@ -74,7 +81,13 @@ Recipe Hub
 </h3>
 </span>
 </span>
-
+<!-- footer for meal tracker button -->
+<footer class="tracker-foot">
+<button onclick="eatingTracker()"  id="tracker">
+    <div class="tracker-text" > Meal Tracker...
+    </div>
+</button>
+</footer>
 
 </section>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

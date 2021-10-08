@@ -15,15 +15,14 @@ html {
 }
 .main {
   width: fit-content;
-  margin: 100px 100px 100px 100px;
+  height: max-content;
+  margin: 100px;
   padding: 10%;
   display: inline-flex;
   justify-content: center;
   background-image: url(img/bowl.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
-
 }
 section {
   display: flex;
@@ -36,7 +35,7 @@ section {
   font-size: 4rem;
   color: rgb(13, 58, 25);
   margin-bottom: 30px;
-  padding: 4%;
+  padding: 2%;
 }
 form {
   width: 100%;
@@ -72,19 +71,23 @@ form input {
   padding-left: none;
 }
 .container {
-  height: fit-content;
-
-  justify-content: right;
+  /* height: fit-content; */
+   /* justify-content: right; */
 }
+
 .welcome-area {
   text-align: center;
   justify-content: center;
+  /*changes here */
+  top: 150px;
+  right: 170px;
+  position: relative;
   padding-top: 70%;
-  color:rgb(30, 88, 22);
-  }
- .welcome{
-     padding-bottom: 4%;
- }
+  color: rgb(30, 88, 22);
+}
+.welcome {
+  padding-bottom: 0%;
+}
 .entry {
   text-align: left;
   padding-right: 20rem;
@@ -97,8 +100,16 @@ form input {
 }
 .name-question {
   font-weight: bolder;
-  font-size: 40px;
+  font-size: 60px;
   padding-right: 50%;
+  position: absolute; /* why does this break the favorites button */
+  top: 255px;
+  left: 200px;
+  text-align: center;
+}
+
+.displayname {
+  font-size: 50px;
 }
 .navigation {
   display: inline-flex;
@@ -155,6 +166,10 @@ ion-icon {
   display: inline-flexbox;
   padding: 15%;
   width: max-content;
+  position: relative;
+  /*changes here */ bottom: 100px;
+  right: -190px;
+
 }
 .fav-button {
   display: inline-flex;
@@ -168,4 +183,16 @@ ion-icon {
   font-weight: bolder;
   text-align: center;
   color: rgba(165, 42, 42, 0.438);
+}
+
+.tracker-foot {
+  position: absolute;
+  bottom: -110px;
+  right: 230px;
+}
+
+.tracker-foot .tracker-text {
+  font-family: "Bonheur Royale";
+  font-size: 30px;
+  background-color: rgba(231, 213, 48, 0.925);
 }
