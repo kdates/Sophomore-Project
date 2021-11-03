@@ -1,0 +1,55 @@
+<!-- favorite Recipes -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <!-- links to css file -->
+    <link href="makegrocery.css" rel="stylesheet" />
+
+    <title>Favorite Recipes</title>
+    <link rel="shortcut icon" href="favicon.ico" type="img/jpg" />
+  </head>
+  <body>
+    <!-- Heading -->
+    <div id="bgd" class="bgcontainer">
+    <h1 class="Faverecipetitle">Favorite Recipes</h1>
+    </div>
+
+
+    <div class= "favecontent">
+      <h2>Bookmark recipes here &#9749;</h2>
+      <!-- favorited recipes appear here -->
+      <form class="form" action="#">
+          <div class="input-field">
+          <label for="site_name">Recipe</label>
+          <input name="site_name" type="text" placeholder="Site Name">
+        </div>
+
+        <div class="input-field">
+          <label for="url">Site URL</label>
+          <input name="url" type="text" placeholder="Website URL" />
+        </div>
+
+          <button class="save_button">Bookmark</button>
+          </form>
+             <!-- End Bookmark form -->
+             <!--bookmarks will display here! -->
+          <div class="bookmarks"></div>
+
+  <!-- footer to take you home-->
+  <a href="index.html">
+    <footer>
+      <span class="return">
+        <i class="goHome"> Return to Home page </i>
+        <ion-icon name="home-outline"></ion-icon>
+      </span>
+    </footer>
+  </a>
+
+  <!-- link to the js -->
+  <script src="fave.js">
+
+  </script>
+
+  </body>
+</html>

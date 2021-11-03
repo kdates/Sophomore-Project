@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+html {
+  font-family: "IM Fell English SC";
+  font-size: 35px;
+  background-image: url(img/foood.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.favorites-icon {
+  justify-content: right;
+}
+.main {
+  width: 95%;
+  height: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  padding: auto;
+  position:relative;
+  padding-top: 1%;
+  display: inline-flex;
+  justify-content: center;
+  background-image: url(img/bowlUp2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius:35% ;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 30px;
+}
+.logo {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+form {
+  width: 100%;
+  max-width: 250px;
+  max-height: 25px;
+  background-color: rgba(183, 243, 183, 0.67);
+
+  border-radius: 100px;
+  display: inline-flex;
+}
+form input {
+  width: 90%;
+  background-color: transparent;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: inline-block;
+}
+
+.below {
+  font-size: 30px;
+}
+.flex-column {
+  list-style-type: none;
+}
+.word-fav {
+  font-weight: bolder;
+  display: inline-flex;
+  justify-content: right;
+  margin-left: none;
+  padding-left: none;
+  color: white;
+}
+.container {
+  height: max-content;
+
+  justify-content: right;
+}
+.welcome-area {
+  text-align: center;
+  justify-content: center;
+  margin-top: 30%;
+  color: white;
+}
+.slogan {
+  color: white;
+}
+.welcome {
+  padding-top: 6%;
+  color: white;
+}
+.entry {
+  justify-content: center;
+  padding-right: 24rem;
+  margin: none;
+  padding-left: none;
+}
+.name {
+  font-size: 30px;
+  justify-content: right;
+}
+.name-question {
+  font-weight: bolder;
+  font-size: 40px;
+  padding-right: 50%;
+  top: 255px;
+  left: 200px;
+  text-align: left;
+  color: white;
+}
+
+/* dispalys the name */
+.displayname {
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+
+  margin-top: -15px;
+}
+
+/*favorites button */
+.fav-button {
+  display: inline-flex;
+  align-items: right;
+  justify-content: right;
+  cursor: pointer;
+  background-color: rgba(231, 213, 48, 0.925);
+}
+.navigation {
+  display: flex;
+  justify-content:flex-start;
+  position: inherit;
+  padding-left:10%;
+  padding-top: 7%;
+margin: auto;
+}
+.main {
+  padding-top: 0;
+}
+.favorites-icon {
+  justify-content: right;
+}
+.fav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: rgba(231, 213, 48, 0.925);
+}
+.fav-button:hover {
+  background: rgb(72, 131, 99);
+}
+
+ion-icon {
+  font-size: 20px;
+  padding: 10%;
+  cursor: pointer;
+  align-items: center;
+}
+.nav-personal {
+  display: flex;
+  height: 80px;
+  width: 170px;
+  background-color: rgba(247, 52, 18, 0.212);
+  cursor: pointer;
+  font-weight: bold;
+}
+.nav-personal:hover {
+  background-color: rgba(16, 231, 16, 0.411);
+}
+.nav-personal ion-icon {
+  font-size: 20px;
+  justify-content: right;
+  padding-right: 4%;
+  padding-top: 5%;
+  color: rgba(119, 156, 55, 0.952);
+}
+#personalrecipes ion-icon {
+  font-size: 60px;
+}
+.fastFood {
+  font-size: 50px;
+  padding-right: 7%;
+}
+.book-icon {
+  font-size: 50px;
+  padding-right: 7%;
+}
+.container {
+  text-align: right;
+  display: inline-flexbox;
+  padding: 15%;
+  width: max-content;
+}
+.fav-button {
+  display: inline-flex;
+  justify-content: right;
+  padding-right: 0%;
+}
+.recipes-tabs {
+  font-size: 20px;
+  padding: 5%;
+  font-family: "Bonheur Royale";
+  font-weight: bolder;
+  text-align: center;
+  justify-content: center;
+  color: rgba(119, 156, 55, 0.952);
+}
+li {
+  list-style-type: none;
+}
+.tracker-foot :hover {
+  background-color: rgba(237, 241, 198, 0.904);
+}
+.tracker-foot .tracker-text {
+  font-family: "Bonheur Royale";
+  font-size: 30px;
+  background-color: rgba(231, 213, 48, 0.925);
+}

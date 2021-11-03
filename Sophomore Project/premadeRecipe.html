@@ -1,0 +1,49 @@
+<!--Premade Recipes and Grocery Lists -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="makegrocery.css" rel="stylesheet" />
+
+    <script src="nav.js"></script>
+    <meta charset="utf-8" />
+    <title>Premade Recipes</title>
+    <link rel="shortcut icon" href="favicon.ico" type="img/jpg" />
+  </head>
+  <body>
+    <h1 class="Premade-title">Premade Recipes, Grocery Lists and Utlities</h1>
+    <section class="mainP">
+      <div class="container">
+        <span class="searchBar">
+          <input id="searchTerm" type="text" placeholder="Enter search term" />
+          <button onclick="getVal()" id="search">Search</button>
+        </span>
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn">
+              Ultilies and Premade Grocery Lists
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Utilites</a>
+              <a href="premadeGrocery.html">Grocery Lists</a>
+            </div>
+          </div>
+        </div>
+        <div id="content"></div>
+        <div class="search-result"></div>
+      </div>
+    </section>
+    <a href="index.html">
+      <footer>
+        <span class="return">
+          <i class="goHome"> Return to Home page </i>
+          <ion-icon name="home-outline"></ion-icon>
+        </span>
+      </footer>
+    </a>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>
