@@ -1,0 +1,38 @@
+/*THIS IS WHERE THE CSS FOR THE PERSONAL RECIPES LIES!!!!!*/
+/* FORMATTING FOR PERSONAL RECIPES FORM */
+.description {
+  padding: 6%;
+}
+.inputs4Recipes {
+  font-weight: bolder;
+  background-color: rgb(131, 73, 39);
+  margin-left: 50%;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+.inputs4Recipes h2 {
+  text-decoration: underline;
+}
+.description {
+  padding-right: 1%;
+  padding-left: 1%;
+}
+.name-cat {
+  padding-bottom: 1%;
+}
+.PersonHeader {
+  background-color: #228b22;
+  color: rgb(252, 249, 246);
+}
+#submitR {
+  margin-left: 90%;
+  background-color: #228b22;
+}
+#submitR:hover {
+  background-color: yellowgreen;
+}
+.cat {
+  padding-left: none;
+}
+/*This is where it ends*/

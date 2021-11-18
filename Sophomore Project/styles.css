@@ -40,6 +40,7 @@ section {
   text-align: center;
   font-size: 1.5rem;
   color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 form {
   width: 100%;
@@ -74,6 +75,7 @@ form input {
   margin-left: none;
   padding-left: none;
   color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 .container {
   height: max-content;
@@ -88,10 +90,12 @@ form input {
 }
 .slogan {
   color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 .welcome {
   padding-top: 6%;
   color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 .entry {
   justify-content: center;
@@ -105,12 +109,15 @@ form input {
 }
 .name-question {
   font-weight: bolder;
-  font-size: 40px;
+  font-size: 30px;
   padding-right: 50%;
-  top: 255px;
-  left: 200px;
+  position: absolute;
+  top: 92px;
+  left: 950px;
   text-align: left;
   color: white;
+  text-shadow: 2px 2px 4px #000000;
+  width: 200px;
 }
 
 /* dispalys the name */
@@ -118,6 +125,7 @@ form input {
   font-size: 50px;
   font-weight: bolder;
   color: white;
+  text-shadow: 2px 2px 4px #000000;
 
   margin-top: -15px;
 }

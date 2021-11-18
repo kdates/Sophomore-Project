@@ -1,204 +1,126 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>Meal Tracker</title>
     <link rel="shortcut icon" href="favicon.ico" type="img/jpg">
-
-    <script src="nav.js"></script>
     <link href="makegrocery.css" rel="stylesheet" />
-    <link href="calendar.css" rel="stylesheet" />
-
+    <link href="test.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
+    <div class="container">
+        <div class="calendar">
+            <div class="month">
+                <i class="fas fa-angle-left prev"></i>
+                <div class="date">
+                    <h1></h1>
+                    <p></p>
+                </div>
+                <i class="fas fa-angle-right next"></i>
+            </div>
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days"></div>
+        </div>
+    </div>
 
-    <body class="Lauren">
-        <!DOCTYPE html>
-        <html lang="en" dir="ltr">
-
-        <head>
-            <meta charset="utf-8">
-            <title>Meal Tracker</title>
-            <link rel="shortcut icon" href="favicon.ico" type="img/jpg">
-
-            <script src="nav.js"></script>
-            <link href="makegrocery.css" rel="stylesheet" />
-        </head>
-
-        <body>
-
-            <body class="Lauren">
-                <h1>Track Your Meals</h1>
-                <div class="checklist">
-                    <h2> Meal Checklist </h2>
-                    <ul>
-                        <li>
-                            <!-- Checkbox -->
-                            <label>
-                            <input type="checkbox" name="">
-                            <span></span>
-                          </label>
-                            <!-- Put the boxes that Salena had a notebad into the the checklist -->
-                            <input type="food" name="breakfast" id="breakfast" placeholder="What did you eat today?" value="">
-                            <!--- <input type="button" name="submit2"> -->
-                            <button onclick="breakfastList()">Submit</button>
-                            <p id="displayedB"></p>
-                            <!-- Prints the list-->
-                            <div class="displayList1">
-                                <p><span id="displayBreakfast"></span></p>
-                            </div>
-                        </li>
-                        <li>
-                            <label>
-                              <input type="checkbox" name="">
-                              <span></span>
-                            </label>
-                            <input type="food" name="lunch" id="lunch" placeholder="What did you eat today? (Lunch)" value="">
-                            <!--- <input type="button" name="submit2"> -->
-                            <button onclick="lunchList()">Submit</button>
-                            <p id="displayedL"></p>
-                            <div class="displayList2">
-                                <p><span id="displayLunch"></span></p>
-                            </div>
-                        </li>
-                        <li>
-                            <label>
-                            <input type="checkbox" name="">
-                            <span></span>
-                          </label>
-                            <input type="food" name="dinner" id="dinner" placeholder="What did you eat today?" value="">
-                            <!--- <input type="button" name="submit2"> -->
-                            <button onclick="dinnerList()">Submit</button>
-                            <p id="displayedD"></p>
-                            <div class="displayList3">
-                                <p><span id="displayDinner"></span></p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <label>
-                            <input type="checkbox" name="">
-                            <span></span>
-                          </label>
-                            <input type="food" name="snack" id="snack" placeholder="What did you eat today?" value="">
-                            <!--- <input type="button" name="submit2"> -->
-                            <button onclick="snackList()">Submit</button>
-                            <p id="displayedS"></p>
-                            <div class="displayList4">
-                                <p><span id="displaySnack"></span></p>
-                            </div>
-                        </li>
-                        <li>
-                            <label>
-                            <input type="checkbox" name="">
-                            <span></span>
-                          </label>
-                            <input type="food" name="other" id="other" placeholder="What did you eat today?" value="">
-                            <!--- <input type="button" name="submit2"> -->
-                            <button onclick="otherList()">Submit</button>
-                            <p id="displayedO"></p>
-                            <div class="displayList5">
-                                <p><span id="displayOther"></span></p>
-                            </div>
-                        </li>
-
-                        <div class="cal_container">
-
-                            <table id="cal_table">
-                                <caption>Month: October, 2021</caption>
-                                <thead>
-                                    <tr>
-                                        <th>Sunday</th>
-                                        <th>Monday</th>
-                                        <th>Tuesday</th>
-                                        <th>Wednesday</th>
-                                        <th>Thursday</th>
-                                        <th>Friday</th>
-                                        <th>Saturday</th>
-                                    </tr>
-                                </thead>
-
-                                <tbody>
-                                    <tr>
-                                        <td> </td>
-                                        <td> </td>
-                                        <td> </td>
-                                        <td> </td>
-                                        <td> </td>
-                                        <td>01</td>
-                                        <td>02</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>03</td>
-                                        <td>04</td>
-                                        <td>05</td>
-                                        <td>06</td>
-                                        <td>07</td>
-                                        <td>08</td>
-                                        <td>09</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>10</td>
-                                        <td>11</td>
-                                        <td>12</td>
-                                        <td>13</td>
-                                        <td>14</td>
-                                        <td>15</td>
-                                        <td>16</td>
-                                    </tr>
-                                    <tr>
-                                        <td>17</td>
-                                        <td>18</td>
-                                        <td>19</td>
-                                        <td>20</td>
-                                        <td>21</td>
-                                        <td>22</td>
-                                        <td>23</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>24</td>
-                                        <td>25</td>
-                                        <td>26</td>
-                                        <td>27</td>
-                                        <td>28</td>
-                                        <td>29</td>
-                                        <td>30</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>31</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-
-            </body>
-
-        </html>
+    <script src="nav.js"></script>
 
 
-        <a href="index.html">
-            <footer>
-                <span class="return">
-                <i class="goHome">
-                    Return to Home page
-            </i>
-            <ion-icon name="home-outline"></ion-icon>
+    <h1>Track Your Meals</h1>
+    <div class="checklist">
+        <h2> Meal Checklist </h2>
+        <ul>
+            <li>
+                <!-- Checkbox -->
+                <label>
+                        <input type="checkbox" name="">
+                        <span></span>
+                      </label>
+                <!-- Put the boxes that Salena had a notebad into the the checklist -->
+                <input type="food" name="breakfast" id="breakfast" placeholder="What did you eat today?" value="">
+                <!--- <input type="button" name="submit2"> -->
+                <button onclick="breakfastList()">Submit</button>
+                <p id="displayedB"></p>
+                <!-- Prints the list-->
+                <div class="displayList1">
+                    <p><span id="displayBreakfast"></span></p>
+                </div>
+            </li>
+            <li>
+                <label>
+                          <input type="checkbox" name="">
+                          <span></span>
+                        </label>
+                <input type="food" name="lunch" id="lunch" placeholder="What did you eat today? (Lunch)" value="">
+                <!--- <input type="button" name="submit2"> -->
+                <button onclick="lunchList()">Submit</button>
+                <p id="displayedL"></p>
+                <div class="displayList2">
+                    <p><span id="displayLunch"></span></p>
+                </div>
+            </li>
+            <li>
+                <label>
+                        <input type="checkbox" name="">
+                        <span></span>
+                      </label>
+                <input type="food" name="dinner" id="dinner" placeholder="What did you eat today?" value="">
+                <!--- <input type="button" name="submit2"> -->
+                <button onclick="dinnerList()">Submit</button>
+                <p id="displayedD"></p>
+                <div class="displayList3">
+                    <p><span id="displayDinner"></span></p>
+                </div>
+            </li>
+
+            <li>
+                <label>
+                        <input type="checkbox" name="">
+                        <span></span>
+                      </label>
+                <input type="food" name="snack" id="snack" placeholder="What did you eat today?" value="">
+                <!--- <input type="button" name="submit2"> -->
+                <button onclick="snackList()">Submit</button>
+                <p id="displayedS"></p>
+                <div class="displayList4">
+                    <p><span id="displaySnack"></span></p>
+                </div>
+            </li>
+            <li>
+                <label>
+                        <input type="checkbox" name="">
+                        <span></span>
+                      </label>
+                <input type="food" name="other" id="other" placeholder="What did you eat today?" value="">
+                <!--- <input type="button" name="submit2"> -->
+                <button onclick="otherList()">Submit</button>
+                <p id="displayedO"></p>
+                <div class="displayList5">
+                    <p><span id="displayOther"></span></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- footer to take you home-->
+    <a href="index.html">
+      <footer>
+        <span class="return">
+          <i class="goHome"> Return to Home page </i>
+          <ion-icon name="home-outline"></ion-icon>
         </span>
-            </footer>
-        </a>
-        </body>
+      </footer>
+    </a>
+</body>
 
 </html>
