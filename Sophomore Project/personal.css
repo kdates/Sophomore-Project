@@ -3,10 +3,10 @@
 .description {
   padding: 6%;
 }
-.inputs4Recipes {
+.inputs4Recipes12 {
   font-weight: bolder;
-  background-color: rgb(131, 73, 39);
-  margin-left: 50%;
+  background-color: rgb(222, 241, 222);
+  padding: 5%;
   justify-content: center;
   align-items: center;
   height: 20%;
@@ -35,4 +35,70 @@
 .cat {
   padding-left: none;
 }
-/*This is where it ends*/
+/*This is where it ends make a grocery buttons begin*/
+.subGroc{
+  background-color: burlywood;
+  border-radius: 50%;
+  text-align: center;
+
+}
+.subGroc:hover{
+  background-color: #228b22;
+}
+.formcontainer{
+  border-radius: 40%;
+  justify-content: center;
+  padding-right:5%;
+  background-color: rgb(139, 184, 51,.5);
+}
+.displaylist {
+  margin: auto;
+  background: white;
+  padding: 5px;
+  height: 400px;
+  width: 270px;
+  font-weight: bold;
+  border-radius: 20%;
+}
+
+.displaylist h3 {
+  text-align: center;
+  color: #d2691e;
+}
+
+.maptime {
+  float: right;
+  padding: 10px;
+  height: 400px;
+  width: 400px;
+  text-align: center;
+  background-color: rgb(139, 184, 51,.5);
+  border-radius: 10px;
+  position: absolute;
+  top: 180px;
+  right: 10px;
+}
+
+.maptime h4 {
+  text-align: center;
+  color: #d2691e;
+}
+
+.maptime button {
+  display: inline-block;
+  background-color: burlywood;
+  border-radius: 15px;
+  width: 55px;
+  text-align: center;
+  padding:1%;
+  margin: 2%;
+  justify-content: center;
+}
+button:hover {
+  background-color: grey;
+}
+.gmapPic{
+  height:auto;
+  width: 80%;
+  margin-right: 2%;
+}

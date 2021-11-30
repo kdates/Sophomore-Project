@@ -1,10 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap");
 
 html {
-    font-family: "IM Fell English SC";
-    background-image: url(img/yee2.jpg);
-    background-repeat: repeat-y;
-    background-size: cover;
+     font-family: "IM Fell English SC";
+  background-color: rgb(95, 62, 18);
+  background-image: url(img/yee2.jpg);
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.mainP {
+     height: 70%;
+  width: 75%;
+  padding: 5%;
+  margin: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(151, 196, 147, 0.9);
+}
+
+.search-recipe {
+    justify-content: center;
+}
+.search-result {
+    width: auto;
+    display: grid;
+    grid-template: auto/repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.item {
+     width: 100px;
+     height: auto;
+  border-radius: 8px;
+  background-color: rgba(87, 163, 91, 0.5);
+  padding: 1%;
+  margin: auto;
+  overflow: hidden;
+  justify-content: left;
+}
+
+.item img {
+    width: 100%;
+  height:100%;
+  border-radius: 4px;
+}
+
+.flex-win {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#search{
+  background-color: rgb(46, 116, 27);
+  color: whitesmoke;
+  border-radius: 50%;
+}
+.searchBar {
+  width: 90%;
+  margin: 5%;
+}
+.item-data {
+  color: rgb(31, 41, 28);
+  display: block;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
 }
 
 .mainP {
@@ -17,11 +90,6 @@ html {
     justify-content: center;
     background-color: rgba(151, 196, 147, 0.9);
 }
-
-.search-recipe {
-    justify-content: center;
-}
-
 form {
     padding-bottom: 10%;
     padding-left: 20%;
@@ -40,17 +108,16 @@ form ion-icon {
 }
 
 .search-result {
-    margin-top: 50px;
     width: 100%;
     display: grid;
-    grid-gap: 100px;
-    grid-template: auto/repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 70px;
+    grid-template: auto/repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .item {
     width: 100%;
     border-radius: 8px;
-    background-color: rgb(66, 202, 73);
+    background-color: olivedrab;
     padding: 15px;
     overflow: hidden;
 }
@@ -66,14 +133,13 @@ form ion-icon {
     align-items: center;
     justify-content: space-between;
 }
-
 .food {
     background-color: burlywood;
     overflow: hidden;
     width: 100%;
     padding: 15px;
     border-radius: 12px;
-    outline: #228b22;
+    outline: olivedrab;
     border-color: aqua;
 }
 
@@ -85,9 +151,9 @@ img {
 
 /* beginning of make a grocery list css */
 .dumbbgd {
-    background-color: rgb(222, 241, 222);
+    background-color:rgba(151, 196, 147, 0.9);
     height: 650px;
-    width: 300px;
+    width: 60%;
 }
 
 .bgcontainer {
@@ -120,49 +186,7 @@ ul {
     list-style-type: none;
 }
 
-.displaylist {
-    margin: auto;
-    background: white;
-    padding: 5px;
-    height: 200px;
-    width: 270px;
-    font-weight: bold;
-}
 
-.displaylist h3 {
-    text-align: center;
-    color: #d2691e;
-}
-
-.maptime {
-    float: right;
-    padding: 10px;
-    height: 100px;
-    width: 400px;
-    text-align: center;
-    background-color: #f5f5dc;
-    border-radius: 10px;
-    position: absolute;
-    top: 280px;
-    right: 10px;
-}
-
-.maptime h4 {
-    text-align: center;
-    color: #d2691e;
-}
-
-.maptime button {
-    display: inline-block;
-    background-color: burlywood;
-    border-radius: 15px;
-    width: 55px;
-    text-align: center;
-}
-
-button:hover {
-    background-color: grey;
-}
 /* end of make a grocery list css */
 
 
@@ -633,6 +657,7 @@ img {
     display: flex;
     justify-content: center;
     background-color: darkseagreen;
+    padding: 5%;
 }
 
 #checkboxes label {
@@ -790,105 +815,3 @@ img {
 .newParts{
   padding: 2%;
 }
-
-/*This is where it ends*/
-@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap");
-
-html {
-     font-family: "IM Fell English SC";
-  background-color: rgb(95, 62, 18);
-  background-image: url(img/yee2.jpg);
-  background-repeat: repeat-y;
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-}
-
-.mainP {
-     height: 70%;
-  width: 75%;
-  padding: 5%;
-  margin: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(151, 196, 147, 0.9);
-}
-
-.search-recipe {
-    justify-content: center;
-}
-
-form {
-    padding-bottom: 10%;
-    padding-left: 20%;
-    display: flex;
-}
-
-form input {
-    width: 80%;
-    background-color: transparent;
-    padding: 5px;
-    display: inline-block;
-}
-
-form ion-icon {
-    font-size: 1.3rem;
-}
-
-.search-result {
-    margin-top: 50px;
-    width: 100%;
-    display: grid;
-    grid-gap: 100px;
-    grid-template: auto/repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.item {
-     width: 50%;
-  border-radius: 8px;
-  background-color: rgba(87, 163, 91, 0.5);
-  padding: 3%;
-  margin: auto;
-  overflow: hidden;
-  justify-content: left;
-}
-
-.item img {
-    width: 100%;
-  height: max-content;
-  border-radius: 4px;
-}
-
-.flex-win {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.searchBar button {
-  background-color: rgb(31, 41, 28);
-  color: whitesmoke;
-  border-radius: 50%;
-}
-.searchBar {
-  width: 90%;
-  margin: 5%;
-}
-
-.item-data {
-  color: rgb(31, 41, 28);
-  display: block;
-  margin-top: 10px;
-  font-size: 1.4rem;
-  letter-spacing: 0.05rem;
-  line-height: 2rem;}

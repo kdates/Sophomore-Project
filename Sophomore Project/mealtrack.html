@@ -5,39 +5,77 @@
     <meta charset="utf-8">
     <title>Meal Tracker</title>
     <link rel="shortcut icon" href="favicon.ico" type="img/jpg">
-    <link href="makegrocery.css" rel="stylesheet" />
-    <link href="test.css" rel="stylesheet" />
+    <link href="mealtrack122.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
+
     <div class="container">
-        <div class="calendar">
-            <div class="month">
-                <i class="fas fa-angle-left prev"></i>
-                <div class="date">
-                    <h1></h1>
-                    <p></p>
-                </div>
-                <i class="fas fa-angle-right next"></i>
-            </div>
-            <div class="weekdays">
-                <div>Sun</div>
-                <div>Mon</div>
-                <div>Tue</div>
-                <div>Wed</div>
-                <div>Thu</div>
-                <div>Fri</div>
-                <div>Sat</div>
-            </div>
-            <div class="days"></div>
+        <div class="calendarYear">
+            <form class="chooseMonth">
+                <label class="cMonth" for="month">Jump To: </label>
+                <select name="month" id="month" onchange="chooseDropDown()"> 
+                <option value=0>January</option>
+                <option value=1>February</option>
+                <option value=2>March</option>
+                <option value=3>April</option>
+                <option value=4>May</option>
+                <option value=5>June</option>
+                <option value=6>July</option>
+                <option value=7>August</option>
+                <option value=8>September</option>
+                <option value=9>October</option>
+                <option value=10>November</option>
+                <option value=11>December</option>
+                </select>
+
+
+                <form class="chooseYear">
+                    <label for="cYear" for="year"> Pick Year: </label>
+                    <select name="year" id="year" onchange="chooseDropDown()">
+                <option value=2015>2015</option>
+                <option value=2016>2016</option>
+                <option value=2017>2017</option>
+                <option value=2018>2018</option>
+                <option value=2019>2019</option>
+                <option value=2020>2020</option>
+                <option value=2021>2021</option>
+                <option value=2022>2022</option>
+                <option value=2023>2023</option>
+                <option value=2024>2024</option>
+                <option value=2025>2025</option>
+                </select>
+                </form>
+            </form>
+
+
+            <button class="lastMonth" id="back" onclick="lastMonth()">Back</button>
+            <button class="nextMonth" id="next" onclick="nextMonth()">Next</button>
+            <h1 id="monthAndYearTitle"> November 2021 </h1>
+            <table class="monthlyView">
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody id="days">
+                </tbody>
+            </table>
         </div>
     </div>
+    <script src="mealtrack123.js"></script>
 
-    <script src="nav.js"></script>
 
 
-    <h1>Track Your Meals</h1>
+    <div class="yeet">
+    <h1 class="tracktitle">Track Your Meals</h1></div>
     <div class="checklist">
         <h2> Meal Checklist </h2>
         <ul>
@@ -114,13 +152,22 @@
     </div>
     <!-- footer to take you home-->
     <a href="index.html">
-      <footer>
-        <span class="return">
-          <i class="goHome"> Return to Home page </i>
-          <ion-icon name="home-outline"></ion-icon>
-        </span>
-      </footer>
-    </a>
-</body>
+        <footer>
+          <span class="return">
+            <i class="goHome">Return to Home page </i>
+            <ion-icon name="home-outline"></ion-icon>
+          </span>
+        </footer>
+      </a>
+     
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+    </body>
 
 </html>

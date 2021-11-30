@@ -27,7 +27,7 @@ function useApiData(results) {
       <div class="item">
         <img src="${result.recipe.image}" alt="img">
         <div class="flex-container">
-          <h1 class="title">${result.recipe.label}</h1>
+          <h1 class="item-data title">${result.recipe.label}</h1>
           <a class="view-btn" target="_blank" href="${
             result.recipe.url
           }">View Recipe</a>
@@ -38,11 +38,11 @@ function useApiData(results) {
             ? result.recipe.dietLabels
             : "No Data Found"
         }</p>
-        <p class="item-data">Health labels: ${result.recipe.healthLabels}</p>
+        
       </div>
     `;
   });
-  document.querySelector(".search-result").innerHTML += generatedHTML;
+  document.querySelector(".search-result").innerHTML = generatedHTML;
 }
 
 //function that opens Personal Recipes page
@@ -89,132 +89,4 @@ function welcomeUser() {
   document.getElementById("theirName").innerHTML =
     "Hi " + document.getElementById("username").value;
   return false; //prevents page from refreshing
-}
-
-//funtion to make another input ingredient to popup
-let num=5;
-function addATab(){
-  let generatedHTML = "";
-  generatedHTML +=
-  `<span class="parts">
-  <p class="description">Please Enter an Ingredient</p>
-<input class="recipeName1" type="text" placeholder="Ingredient ${num}" >
-</span>`;
-num++;
-document.querySelector(".addedPart").innerHTML += generatedHTML;
-}
-
-//meal tracker calendar js
-const date = new Date();
-
-const renderCalendar = () => {
-    date.setDate(1);
-
-    const monthDays = document.querySelector(".days");
-
-    const lastDay = new Date(
-        date.getFullYear(),
-        date.getMonth() + 1,
-        0
-    ).getDate();
-
-    const prevLastDay = new Date(
-        date.getFullYear(),
-        date.getMonth(),
-        0
-    ).getDate();
-
-    const firstDayIndex = date.getDay();
-
-    const lastDayIndex = new Date(
-        date.getFullYear(),
-        date.getMonth() + 1,
-        0
-    ).getDay();
-
-    const nextDays = 7 - lastDayIndex - 1;
-
-    const months = [
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December",
-    ];
-
-    document.querySelector(".date h1").innerHTML = months[date.getMonth()];
-
-    document.querySelector(".date p").innerHTML = new Date().toDateString();
-
-    let days = "";
-
-    for (let x = firstDayIndex; x > 0; x--) {
-        days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
-    }
-
-    for (let i = 1; i <= lastDay; i++) {
-        if (
-            i === new Date().getDate() &&
-            date.getMonth() === new Date().getMonth()
-        ) {
-            days += `<div class="today">${i}</div>`;
-        } else {
-            days += `<div>${i}</div>`;
-        }
-    }
-
-    for (let j = 1; j <= nextDays; j++) {
-        days += `<div class="next-date">${j}</div>`;
-        monthDays.innerHTML = days;
-    }
-};
-
-document.querySelector(".prev").addEventListener("click", () => {
-    date.setMonth(date.getMonth() - 1);
-    renderCalendar();
-});
-
-document.querySelector(".next").addEventListener("click", () => {
-    date.setMonth(date.getMonth() + 1);
-    renderCalendar();
-});
-
-renderCalendar();
-
-/** new content from nav.js */
-function eatingTracker() {
-    window.location = "mealtrack.html";
-
-}
-
-function breakfastList() {
-    var breakfast = document.getElementById("breakfast");
-    document.getElementById("displayedB").innerHTML = breakfast.value;
-}
-
-function lunchList() {
-    var lunch = document.getElementById("lunch");
-    document.getElementById("displayedL").innerHTML = lunch.value;
-}
-
-function dinnerList() {
-    var dinner = document.getElementById("dinner");
-    document.getElementById("displayedD").innerHTML = dinner.value;
-}
-
-function snackList() {
-    var snack = document.getElementById("snack");
-    document.getElementById("displayedS").innerHTML = snack.value;
-}
-
-function otherList() {
-    var other = document.getElementById("other");
-    document.getElementById("displayedO").innerHTML = other.value;
 }
